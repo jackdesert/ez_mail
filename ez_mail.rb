@@ -20,7 +20,9 @@ Mail.defaults do
                           }
 end
 
-class CustomMailer
+
+
+class EZMail
 
   def initialize(to_arg, subject_arg, body_arg)
     @message  = Mail.new do
@@ -37,5 +39,3 @@ class CustomMailer
 
 end
 
-mailer = CustomMailer.new('2083666059@tmomail.net', 'hi there', "jack says you're doing great!")
-mailer.deliver
